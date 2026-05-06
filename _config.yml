@@ -1,5 +1,19 @@
-remote_theme: devich/quick@0.0.1
-lang: en-US
-bg_color: auto
-theme_color: purple
-title: "Jacob Feinas - Data Analytics"
+title: "Feinas Data Analytics"
+description: "A data analytics nerd that loves sports and silly projects."
+author: "Jacob Feinas
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site Settings
+markdown: kramdown
+highlighter: rouge
+
+# Navigation
+header_pages:
+  - about.md
+  - projects.md
+  - shoutouts.md
