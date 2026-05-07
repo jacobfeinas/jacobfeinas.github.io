@@ -172,21 +172,20 @@
     }
  
     .avatar {
-      flex-shrink: 0;
-      width: 120px;
-      height: 120px;
-      border: 2px solid var(--pink);
-      box-shadow: 0 0 16px var(--purple), inset 0 0 16px rgba(255,113,206,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'VT323', monospace;
-      font-size: 3.5rem;
-      color: var(--pink);
-      text-shadow: 0 0 12px var(--purple);
-      position: relative;
-      overflow: hidden;
-    }
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid var(--pink);
+  box-shadow: 0 0 16px var(--purple), inset 0 0 16px rgba(255,113,206,0.1);
+  filter: saturate(0.85) contrast(1.05);
+  transition: box-shadow 0.3s, filter 0.3s;
+}
+
+.avatar:hover {
+  box-shadow: 0 0 24px var(--pink), 0 0 60px rgba(255,113,206,0.35);
+  filter: saturate(1.1) contrast(1.1) hue-rotate(10deg);
+}
  
     .avatar::after {
       content: "";
@@ -308,9 +307,7 @@
     <h1>░▒▓ About ▓▒░</h1>
  
     <div class="about-hero">
-      <div class="avatar">
-        <img src="IMG_3864 2.PNG" alt="User Avatar">
-      </div> 
+      <img class="avatar" src="assets/img/me.jpg" alt="Your Name"> 
       <div class="about-intro">
         <p>Hi, I'm <strong style="color: var(--pink);">Jacob</strong> — I have a passion for sports and silly projects, with a primary focus on hockey analysis. I try not to take myself too seriously.</p>
         <p>I earned my Master of Science degree in Applied Statistics from the University of Wisconsin&#8211;La Crosse.</p>
