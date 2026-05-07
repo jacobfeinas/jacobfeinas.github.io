@@ -4,13 +4,13 @@ description: "A data analytics nerd that loves sports and silly projects."
 author: "Jacob Feinas"
 
 # Site Settings
-markdown: kramdown
-highlighter: rouge
+#markdown: kramdown
+#highlighter: rouge
 
 # Navigation
-header_pages:
-  - about.md
-  - projects.md
-  - shoutouts.md
+#header_pages:
+#  - about.md
+#  - projects.md
+#  - shoutouts.md
 
-google_fonts: "https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono&display=swap"
+#google_fonts: "https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono&display=swap"
