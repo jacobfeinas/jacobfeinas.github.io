@@ -14,7 +14,7 @@
 body {
  background-color: var(--dark);
  color: var(--cyan);
- font-family: 'Courier New', monospace;
+ font-family: 'Space Mono', monospace;
 }
 /* ── Vaporwave gradient header ────────────────── */
 .site-header {
@@ -51,6 +51,7 @@ h1, h2, h3 {
  letter-spacing: 3px;
  text-transform: uppercase;
  text-shadow: 0 0 12px var(--purple);
+ font-family: 'VT323', monospace; font-size: 2.5rem;
 }
 h1 { border-bottom: 1px solid var(--purple); padding-bottom: 0.3em; }
 /* ── Links ────────────────────────────────────── */
