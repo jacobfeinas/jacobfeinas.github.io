@@ -3,12 +3,6 @@ title: "Feinas Data Analytics"
 description: "A data analytics nerd that loves sports and silly projects."
 author: "Jacob Feinas"
 
-theme: minima
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
 # Site Settings
 markdown: kramdown
 highlighter: rouge
