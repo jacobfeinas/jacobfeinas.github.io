@@ -193,6 +193,34 @@
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--darker); }
     ::-webkit-scrollbar-thumb { background: var(--purple); box-shadow: 0 0 6px var(--pink); }
+
+    /* ── Profile photo ── */
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    
+    .profile-photo {
+      flex-shrink: 0;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border: 2px solid var(--pink);
+      box-shadow: 0 0 16px var(--purple), 0 0 40px rgba(255,113,206,0.2);
+      filter: saturate(0.85) contrast(1.05);
+      transition: box-shadow 0.3s, filter 0.3s;
+    }
+    
+    .profile-photo:hover {
+      box-shadow: 0 0 24px var(--pink), 0 0 60px rgba(255,113,206,0.35);
+      filter: saturate(1.1) contrast(1.1) hue-rotate(10deg);
+    }
+    
+    .profile-text h1 {
+      margin-bottom: 0.8rem;
+    }
   </style>
 </head>
 <body>
@@ -205,8 +233,18 @@
     </nav>
   </header>
 
-  <main>
-    <h1>░▒▓ Welcome ▓▒░</h1>
+  <div class="profile-section">
+    <img class="profile-photo" src="assets/img/me.jpg" alt="Your Name">
+      <div class="profile-text">
+        <h1>░▒▓ Welcome ▓▒░</h1>
+        <p>A short intro line about yourself — who you are, what you do.</p>
+      </div>
+  </div>
+
+  <div class="card">
+    <h2>Latest Post</h2>
+    <p>Your content goes here. The vaporwave aesthetic is fully operational.</p>
+  </div>
 
     <div class="card">
       <h2>Latest Post</h2>
