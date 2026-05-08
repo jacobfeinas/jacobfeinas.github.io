@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --pink:   #ff71ce;
+  --cyan:   #01cdfe;
+  --purple: #b967ff;
+  --yellow: #fffb96;
+  --dark:   #0d0d1a;
+  --darker: #07070f;
+}
+
+body {
+  background-color: var(--dark) !important;
+  color: var(--cyan) !important;
+  font-family: 'Space Mono', monospace !important;
+}
+
+/* scanlines */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 2px,
+    rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'VT323', monospace !important;
+  color: var(--pink) !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px var(--purple);
+}
+
+h1 { font-size: 2.5rem; border-bottom: 1px solid var(--purple); padding-bottom: 0.3em; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.6rem; }
+
+a { color: var(--cyan) !important; transition: color 0.2s, text-shadow 0.2s; }
+a:hover { color: var(--pink) !important; text-shadow: 0 0 6px var(--pink); }
+
+p, li { line-height: 1.8; }
+
+/* code */
+pre, code {
+  background: var(--darker) !important;
+  border: 1px solid var(--purple) !important;
+  color: var(--cyan) !important;
+  border-radius: 3px;
+  font-family: 'Space Mono', monospace !important;
+}
+
+/* blockquote */
+blockquote {
+  border-left: 3px solid var(--pink) !important;
+  background: rgba(255,113,206,0.05) !important;
+  color: var(--yellow) !important;
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+/* tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+th {
+  background: rgba(185,103,255,0.15) !important;
+  color: var(--pink) !important;
+  font-family: 'VT323', monospace !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid var(--purple) !important;
+  padding: 0.6rem 1rem;
+}
+
+td {
+  border: 1px solid rgba(185,103,255,0.3) !important;
+  padding: 0.5rem 1rem;
+  color: var(--cyan) !important;
+}
+
+tr:hover td { background: rgba(255,113,206,0.05) !important; }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--darker); }
+::-webkit-scrollbar-thumb { background: var(--purple); box-shadow: 0 0 6px var(--pink); }
